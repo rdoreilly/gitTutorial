@@ -1,32 +1,17 @@
-""" This is a script that calculates one number to
-    power of another
-"""
+""" This is a script that calculates one number to the power of another """
+import math, sys
 
 def to_the_power(x,y):
-#    result = x
-#    for i in range(1,y):
-#        result = result * x
+    """ return x to the power of y"""
     return x**y
 
-#x = 2
-#y = 5 #
-#result = to_the_power(x,y)
-#print ("This birthday I will be {0} to the power of {1} which makes me: {2}".format(x,y,result))
-
-#x = 2
-#y = 6 #
-
-#print ("Next year I will be: {2}".format(x,y,(to_the_power(x,y) - (result - 1))))
-#print ("The End")
-
-import math
 def square_root(x):
     return math.sqrt(x)
 
-x=5
-y=8
+x = int(sys.argv[1])
+y = int(sys.argv[2])
 
 result = to_the_power(x,y)
+
 print ("{0} to the power of {1} is {2}".format(x,y,result))
-print ("The square root of {0} {1}".format(x,square_root(x)))
-print ("The End")
+print ("The square root of {0} {1}".format(x,square_root(x))) #
