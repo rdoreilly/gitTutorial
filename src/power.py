@@ -8,6 +8,10 @@ def to_the_power(x,y):
 def square_root(x):
     return math.sqrt(x)
 
+if len(sys.argv) < 3:
+    print("You must supply 2 parameters!")
+    exit()
+
 x = int(sys.argv[1])
 y = int(sys.argv[2])
 
